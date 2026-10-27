@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Inserindo vídeos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos</h1>
+    <p>No que tange a compatibilidade, os formatos mais aceitos e utilizados são:</p>
+    <ul>
+        <li>.mp4 e .m4v;<br> O padrão da indústria; excelente para a internet, telemóveis e redes sociais devido ao equilíbrio entre alta qualidade e tamanho reduzido.</li>
+        <li>.ogg; <br> Formato OGG é ideal principalmente para armazenar e transmitir áudio de código aberto sem pagar taxas de licença, sendo muito usado em jogos de vídeo, streaming de rádio online e projetos.</li>
+        <li>.mov; <br> Formato desenvolvido pela Apple; ideal para edição de vídeo profissional e sistemas macOS, embora gere ficheiros maiores.</li>
+        <li>.avi; <br> Um dos formatos mais antigos da Microsoft; compatível com muitos programas, mas com taxas de compressão mais baixas (ficheiros pesados).</li>
+        <li>.webm; <br> O formato de vídeo WebM é ideal para reprodução rápida e eficiente de vídeos diretamente em páginas da internet (sites e navegadores), permite inserir vídeos e animações em HTML5 diretamente no fundo ou no corpo de páginas web, sem precisar de programas ou plugins extra, mas a qualidade é ruim.</li>
+    </ul>    
+
+    <h1>Inserindo vídeos, usarei MP4, WEBM,MOV </h1>
+    <h2> Inserindo vídeos hospedados em meu próprio servidor</h2>
+    <h3>Forma simples</h3>
+    <p>360x640, vídeo leve</p>
+    <video src="midia/video-360x640.mp4" controls width="400"></video> <br>
+    <p>2160x3840, vídeo pesado</p>
+    <video src="midia/video-2160x3840.mp4" controls width="400"></video>
+
+
+    <h3>Forma mais recomendada, aumentando a probabilidade de compatibilidade</h3>
+    <p>Com essa tag, o navegador testaram da primeira até a ultima verificando qual vídeo funciona primeiro, logo após reproduzirá o vídeo compatível , se nenhum funcionar, ou seja, se o navegador náo for compatível, apresesentará a mensagem do final:</p>
+    <p>Cabendo ressaltar que os vídeos que foram hospedados no próprio site o consumo de rede e trafego de dados pode ser grande dependendo da quantidade de pessoas que acessam o site diariamente e isso implica custos.</p>
+    <video width="400" poster="imagens/capa.jpeg" controls autoplay loop>
+        <source src="midia/video-360x640.mp4" type="video/mp4">
+        <source src="midia/Video-360X640.mov" type="video/mov">
+        <source src="midia/Video-360X640.webm" type="video/webm">
+        <p>Seu navegador não é compatível com reprodutor de vídeo.</p>     
+    </video>
+
+    <h1>Solução:</h1>
+    <h2>Youtube em compartilhar e incorporar</h2>
+    <p>Inserir vídeos diretamente no seu site, via incorporação do YouTube, deixa a experiência do usuário mais fluida. O player é otimizado, não pesa no seu servidor, e ainda mantém compatibilidade com diversos dispositivos. Além disso, você se beneficia do sistema de recomendação do YouTube e de métricas integradas, o que ajuda a entender melhor o engajamento do seu público, e usando o conteúdo do cliente vídeos próprios do cleinte, faz com que o conteúdo dele fique em destaque, direto na página, e os visitantes assistem sem sair do seu ambiente. Isso mantém o foco no seu site, mas com toda a robustez do YouTube por trás.</p><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/L2PO0wngHKo?si=d53y3-LEMTBWfV8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Outra opção é usar hospederos pagos , como: vimeo: </p>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/131666950?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Nailed it!"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <p>Podendo até customizar:</p>
+    <iframe src="https://player.vimeo.com/video/131666950?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Nailed it!"></iframe>
+
+
+
+
+
+
+</body>
+</html>
