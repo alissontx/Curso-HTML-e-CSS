@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+
+<style>
+
+body {
+    background-size: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('imagens/img1.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    height: 40px;
+    background-color: rgb(32, 134, 32);
+    color: black;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    width: 700px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+tr {
+    height: 35px;
+}
+
+tr, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td, th {
+    padding: 6px 10px;
+}
+
+Caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(32, 134, 32);
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.numero {
+    font-weight: bold;
+}
+
+.num {
+    font-weight: bold;
+    text-align: center;
+}
+    
+thead, tfoot {
+    background-color: rgb(32, 134, 32);
+}
+
+footer {
+    height: 40px;
+    background-color: rgb(32, 134, 32);
+    color: black;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    position: static;
+    padding: 15px;
+}
+
+footer a {
+    color: #244D36;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #477A50;
+    text-decoration: underline;
+}
+
+</style>
+
+<body>
+
+<header>
+    <h1>Tabela população do Brasil</h1>
+</header>
+
+<table>
+    <caption>População das Unidades Federativas</caption>
+    <thead>
+        <tr>
+            <th scope="col" style="width: 5px;">Nª</th>
+            <th scope="col">Estados e DF</th>
+            <th scope="col" style="width: 100px;">Quantidade</th>
+            <th scope="col">Capital</th>
+            <th scope="col">Região</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="num">01</td>
+            <td>Rondônia</td>
+            <td class="numero">1.757.338</td>
+            <td>Porto Velho</td>
+            <td>Norte</td>
+        </tr>
+        <tr>   
+            <td class="num">02</td> 
+            <td>Acre</td>
+            <td class="numero">887.794</td>
+            <td>Rio Branco</td>
+            <td>Norte</td>
+        </tr>
+        <tr>
+            <td class="num">03</td>
+            <td>Amazonas</td>
+            <td class="numero">4.360.926</td>
+            <td>Manaus</td>
+            <td>Norte</td>
+        </tr>
+        <tr>
+            <td class="num">04</td>
+            <td>Roraima</td>
+            <td class="numero">761.012</td>
+            <td>Boa Vista</td>
+            <td>Norte</td>
+        </tr>
+        <tr>
+            <td class="num">05</td>
+            <td>Pará</td>
+            <td class="numero">8.756.324</td>
+            <td>Belém</td>
+            <td>Norte</td>
+        </tr>
+        <tr>
+            <td class="num">06</td>
+            <td>Amapá</td>
+            <td class="numero">809.953</td>
+            <td>Macapá</td>
+            <td>Norte</td>
+        </tr>
+        <tr>
+            <td class="num">07</td>
+            <td>Tocantins</td>
+            <td class="numero">1.595.994</td>
+            <td>Palmas</td>
+            <td>Norte</td>
+        </tr>
+        <tr>
+            <td class="num">08</td>
+            <td>Maranhão</td>
+            <td class="numero">7.024.557</td>
+            <td>São Luís</td>
+            <td>Nordeste</td>
+        </tr>
+        <tr>
+            <td class="num">09</td>
+            <td>Piauí</td>
+            <td class="numero">3.392.617</td>
+            <td>Teresina</td>
+            <td>Nordeste</td>
+        </tr>
+        <tr>
+            <td class="num">10</td>
+            <td>Ceará</td>
+            <td class="numero">9.302.211</td>
+            <td>Fortaleza</td>
+            <td>Nordeste</td>
+        </tr>
+        <tr>
+            <td class="num">11</td>
+            <td>Rio Grande do Norte</td>
+            <td class="numero">3.463.737</td>
+            <td>Natal</td>
+            <td>Nordeste</td>
+        </tr>
+        <tr>
+            <td class="num">12</td>
+            <td>Paraíba</td>
+            <td class="numero">4.182.828</td>
+            <td>João Pessoa</td>
+            <td>Nordeste</td>
+        </tr>
+        <tr>
+            <td class="num">13</td>
+            <td>Pernambuco</td>
+            <td class="numero">9.583.176</td>
+            <td>Recife</td>
+            <td>Nordeste</td>
+        </tr>
+        <tr>
+            <td class="num">14</td>
+            <td>Alagoas</td>
+            <td class="numero">3.221.128</td>
+            <td>Maceió</td>
+            <td>Nordeste</td>
+        </tr>
+        <tr>
+            <td class="num">15</td>
+            <td>Sergipe</td>
+            <td class="numero">2.307.255</td>
+            <td>Aracaju</td>
+            <td>Nordeste</td>
+        </tr>
+        <tr>
+            <td class="num">16</td>
+            <td>Bahia</td>
+            <td class="numero">14.889.472</td>
+            <td>Salvador</td>
+            <td>Nordeste</td>
+        </tr>
+        <tr>
+            <td class="num">17</td>
+            <td>Minas Gerais</td>
+            <td class="numero">21.460.311</td>
+            <td>Belo Horizonte</td>
+            <td>Sudeste</td>
+        </tr>
+        <tr>
+            <td class="num">18</td>
+            <td>Espírito Santo</td>
+            <td class="numero">4.150.692</td>
+            <td>Vitória</td>
+            <td>Sudeste</td>
+        </tr>
+        <tr>
+            <td class="num">19</td>
+            <td>Rio de Janeiro</td>
+            <td class="numero">17.225.410</td>
+            <td>Rio de Janeiro</td>
+            <td>Sudeste</td>
+        </tr>
+        <tr>
+            <td class="num">20</td>
+            <td>São Paulo</td>
+            <td class="numero">46.179.008</td>
+            <td>São Paulo</td>
+            <td>Sudeste</td>
+        </tr>
+        <tr>
+            <td class="num">21</td>
+            <td>Paraná</td>
+            <td class="numero">11.952.456</td>
+            <td>Curitiba</td>
+            <td>Sul</td>
+        </tr>
+        <tr>
+            <td class="num">22</td>
+            <td>Santa Catarina</td>
+            <td class="numero">8.312.759</td>
+            <td>Florianópolis</td>
+            <td>Sul</td>
+        </tr>
+        <tr>
+            <td class="num">23</td>
+            <td>Rio Grande do Sul</td>
+            <td class="numero">11.233.317</td>
+            <td>Porto Alegre</td>
+            <td>Sul</td>
+        </tr>
+        <tr>
+            <td class="num">24</td>
+            <td>Mato Grosso do Sul</td>
+            <td class="numero">2.946.317</td>
+            <td>Campo Grande</td>
+            <td>Centro-Oeste</td>
+        </tr>
+        <tr>
+            <td class="num">25</td>
+            <td>Mato Grosso</td>
+            <td class="numero">3.950.330</td>
+            <td>Cuiabá</td>
+            <td>Centro-Oeste</td>
+        </tr>
+        <tr>
+            <td class="num">26</td>
+            <td>Goiás</td>
+            <td class="numero">7.495.033</td>
+            <td>Goiânia</td>
+            <td>Centro-Oeste</td>
+        </tr>
+        <tr>
+            <td class="num">27</td>
+            <td>Distrito Federal</td>
+            <td class="numero">3.009.996</td>
+            <td>Brasília</td>
+            <td>Centro-Oeste</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        
+        <th scope="row">Total de habitantes</th>
+        <td>213,56 milhões</td>
+    </tfoot>
+
+</table>
+
+<footer>
+    <p>Site feito por Alisson Teixeira , clique <a href="https://alissontx.github.io/Portf-lio-Alisson-Teixeira/" target="_blank">Aqui</a> para acessar o Porfólio e <a href="https://github.com/alissontx" target="_blank">Aqui</a> para acessar o perfil do Github.</p> <br>
+</footer>
+
+</body>
+</html>
