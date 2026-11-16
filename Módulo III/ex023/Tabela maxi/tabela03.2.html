@@ -9,7 +9,7 @@
 <style>
 
 body {
-    background-size: 100vh;
+    background-size: 97vh;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url('imagens/img1.png');
     background-position: center center;
@@ -17,7 +17,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    min-height: 97vh;
 }
 
 header {
@@ -38,9 +38,17 @@ header {
 
 table {
     margin: auto;
-    width: 700px;
+    width: 800px;
     border-collapse: collapse;
     background-color: white;
+    position: relative;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: 0;
+    background-color: rgb(32, 134, 32) ;
+    height: 40px;
 }
 
 tr {
@@ -82,7 +90,7 @@ footer {
     height: 40px;
     background-color: rgb(32, 134, 32);
     color: black;
-    width: 100%;
+    width: 98%;
     min-height: 50px;
     display: flex;
     justify-content: center;
@@ -318,9 +326,8 @@ footer a:hover {
     </tbody>
 
     <tfoot>
-        
-        <th scope="row">Total de habitantes</th>
-        <td>213,56 milhões</td>
+        <th scope="row" colspan="3">Total de habitantes</th>
+        <td colspan="2">213,56 milhões</td>
     </tfoot>
 
 </table>
